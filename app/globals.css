@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+html.dark {
+  color-scheme: dark;
+}
+
+html, body {
+  background: #f6f1e7;
+  color: #1a1a1a;
+}
+html.dark, html.dark body {
+  background: #0e0d0b;
+  color: #ece6d6;
+}
+
+.paper {
+  background-image:
+    radial-gradient(rgba(0,0,0,0.04) 1px, transparent 1px),
+    radial-gradient(rgba(0,0,0,0.03) 1px, transparent 1px);
+  background-size: 24px 24px, 11px 11px;
+  background-position: 0 0, 12px 12px;
+}
+html.dark .paper {
+  background-image:
+    radial-gradient(rgba(255,255,255,0.045) 1px, transparent 1px),
+    radial-gradient(rgba(255,255,255,0.03) 1px, transparent 1px);
+}
