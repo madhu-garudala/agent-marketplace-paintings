@@ -26,6 +26,7 @@ ${STORE.tagline}
 - **Storefront:** ${origin}
 - **Agent card (JSON):** ${origin}/.well-known/agent.json
 - **Catalog (JSON):** ${origin}/api/paintings
+- **Recent on-chain purchases (JSON):** ${origin}/api/activity
 - **Sitemap:** ${origin}/sitemap.xml
 
 ## What this site sells

@@ -33,6 +33,7 @@ export function AgentCard() {
         <Pill href="/.well-known/agent.json">/.well-known/agent.json</Pill>
         <Pill href="/.well-known/agents.md">/.well-known/agents.md</Pill>
         <Pill href="/api/paintings">/api/paintings</Pill>
+        <Pill href="/api/activity">/api/activity</Pill>
         <Pill href="/sitemap.xml">/sitemap.xml</Pill>
       </div>
     </section>

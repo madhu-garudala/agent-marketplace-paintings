@@ -1,5 +1,6 @@
 import { paintings, STORE } from "@/data/paintings";
 import { AgentCard } from "@/components/AgentCard";
+import { ActivityFeed } from "@/components/ActivityFeed";
 import { PaintingCard } from "@/components/PaintingCard";
 import { ThemeToggle } from "@/components/ThemeToggle";
 
@@ -51,7 +52,10 @@ export default function HomePage() {
         </p>
       </header>
 
-      <AgentCard />
+      <div className="grid gap-6 md:grid-cols-3 mt-0">
+        <div className="md:col-span-2"><AgentCard /></div>
+        <div className="md:col-span-1"><ActivityFeed /></div>
+      </div>
 
       <div className="mt-6 rounded-xl border border-gold/30 bg-gold/5 dark:bg-gold/10 px-4 py-3 text-sm text-ink/80 dark:text-canvas/80">
         <span className="font-semibold">Built for autonomous agents.</span>{" "}

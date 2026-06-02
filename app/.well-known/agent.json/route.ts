@@ -31,6 +31,15 @@ export async function GET(req: Request) {
     },
     skills: [
       {
+        id: "recent-activity",
+        name: "Recent on-chain activity",
+        description:
+          "Returns recent USDC Transfer events to the seller wallet (purchases settled via x402). Read straight from a Base Sepolia RPC; no DB.",
+        inputModes: ["text"],
+        outputModes: ["application/json"],
+        endpoint: `${origin}/api/activity`,
+      },
+      {
         id: "list-paintings",
         name: "List paintings",
         description:
