@@ -13,7 +13,6 @@ export const X402_CONFIG = {
   network: (process.env.X402_NETWORK ?? "eip155:84532") as `${string}:${string}`,
   facilitatorUrl:
     process.env.X402_FACILITATOR_URL ?? "https://www.x402.org/facilitator",
-  priceUSD: 0.01,
 };
 
 if (!X402_CONFIG.payTo || !X402_CONFIG.payTo.startsWith("0x")) {
@@ -35,11 +34,12 @@ export const x402Server = registerExactEvmScheme(
 export function routeConfigForPainting(args: {
   title: string;
   description: string;
+  priceUSD: number;
 }) {
   return {
     accepts: {
       scheme: "exact" as const,
-      price: `$${X402_CONFIG.priceUSD.toFixed(2)}`,
+      price: `$${args.priceUSD.toFixed(2)}`,
       network: X402_CONFIG.network,
       payTo:
         X402_CONFIG.payTo ||

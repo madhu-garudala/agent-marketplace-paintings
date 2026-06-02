@@ -60,6 +60,7 @@ export async function GET(
     routeConfigForPainting({
       title: `"${painting.title}" (${painting.year})`,
       description: painting.description,
+      priceUSD: painting.priceUSD,
     }),
     x402Server,
   );

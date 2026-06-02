@@ -31,7 +31,7 @@ export const paintings: Painting[] = [
     provenance: "Commissioned portrait — Microsoft, Redmond",
     description:
       "A starry-night portrait of Mike Pell of Microsoft — golden hair caught mid-swirl against a cobalt sky, eyes the color of a Provençal noon. Heavy impasto throughout; the canvas reads like sculpture under raking light.",
-    priceUSD: 0.01,
+    priceUSD: 0.05,
     imageSeed: "vg-pell-redmond",
     imageFile: "/paintings/mike-pell.png",
   },
@@ -44,7 +44,7 @@ export const paintings: Painting[] = [
     provenance: "Private collection, Arles",
     description:
       "A swirling, cobalt-drenched orchard under a night sky thick with stars — brushwork so dense the canvas reads like sculpture.",
-    priceUSD: 0.01,
+    priceUSD: 0.08,
     imageSeed: "vg-starlit-orchard",
   },
   {
@@ -56,7 +56,7 @@ export const paintings: Painting[] = [
     provenance: "Estate of Auguste Mercier",
     description:
       "A rare wet-weather study of the famous Yellow House — ochre walls bleeding into a wash of cool grey.",
-    priceUSD: 0.01,
+    priceUSD: 0.03,
     imageSeed: "vg-yellow-house-rain",
   },
   {
@@ -68,7 +68,7 @@ export const paintings: Painting[] = [
     provenance: "Auvers-sur-Oise, private holding",
     description:
       "Horizontal field of cadmium yellow with darting birds — one of the last open-air compositions.",
-    priceUSD: 0.01,
+    priceUSD: 0.07,
     imageSeed: "vg-wheatfield-larks",
   },
   {
@@ -80,7 +80,7 @@ export const paintings: Painting[] = [
     provenance: "Saint-Rémy archives",
     description:
       "Severe, ultramarine self-study with rippling background — unflinching gaze, scarred ear concealed.",
-    priceUSD: 0.01,
+    priceUSD: 0.10,
     imageSeed: "vg-self-portrait-blue",
   },
   {
@@ -92,7 +92,7 @@ export const paintings: Painting[] = [
     provenance: "Theo van Gogh estate (unverified)",
     description:
       "Preparatory study for the celebrated Almond Blossom — looser, more violent in its joy.",
-    priceUSD: 0.01,
+    priceUSD: 0.06,
     imageSeed: "vg-almond-blossom",
   },
   {
@@ -104,7 +104,7 @@ export const paintings: Painting[] = [
     provenance: "Arles, private",
     description:
       "Companion piece to the famous night terrace — first light hitting the awnings, chairs still upturned.",
-    priceUSD: 0.01,
+    priceUSD: 0.02,
     imageSeed: "vg-cafe-dawn",
   },
   {
@@ -116,7 +116,7 @@ export const paintings: Painting[] = [
     provenance: "Saint-Rémy, private",
     description:
       "Re-painted from memory at the asylum — colors more saturated, perspective steeper, intimate to the point of vertigo.",
-    priceUSD: 0.01,
+    priceUSD: 0.09,
     imageSeed: "vg-bedroom-2",
   },
   {
@@ -128,7 +128,7 @@ export const paintings: Painting[] = [
     provenance: "Saint-Paul-de-Mausole garden series",
     description:
       "Violet irises tilting against a chartreuse ground — painted in a single sitting before the light failed.",
-    priceUSD: 0.01,
+    priceUSD: 0.04,
     imageSeed: "vg-irises-twilight",
   },
   {
@@ -152,7 +152,7 @@ export const paintings: Painting[] = [
     provenance: "Arles, private",
     description:
       "After Millet, transfigured — molten sun behind a striding silhouette, the field combed in citron strokes.",
-    priceUSD: 0.01,
+    priceUSD: 0.08,
     imageSeed: "vg-sower-sunset",
   },
   {
@@ -164,7 +164,7 @@ export const paintings: Painting[] = [
     provenance: "Mediterranean coast study",
     description:
       "Four bright hulls beached on pale sand — masts striking the sky like fence posts.",
-    priceUSD: 0.01,
+    priceUSD: 0.02,
     imageSeed: "vg-fishing-boats",
   },
   {
@@ -176,7 +176,7 @@ export const paintings: Painting[] = [
     provenance: "Saint-Rémy",
     description:
       "Trees twisted by wind, painted from a fixed easel weighted with stones. Foliage like green flames.",
-    priceUSD: 0.01,
+    priceUSD: 0.06,
     imageSeed: "vg-olive-mistral",
   },
   {
@@ -188,7 +188,7 @@ export const paintings: Painting[] = [
     provenance: "Roulin family descent",
     description:
       "A second sitting of Joseph Roulin — beard in burnt sienna, jacket in absolute Prussian blue.",
-    priceUSD: 0.01,
+    priceUSD: 0.04,
     imageSeed: "vg-postmaster",
   },
   {
@@ -200,7 +200,7 @@ export const paintings: Painting[] = [
     provenance: "Provence, private",
     description:
       "Panoramic Provençal harvest — receding planes of gold, ochre, and tile-red roofs.",
-    priceUSD: 0.01,
+    priceUSD: 0.09,
     imageSeed: "vg-harvest-la-crau",
   },
   {
@@ -212,7 +212,7 @@ export const paintings: Painting[] = [
     provenance: "Arles, private",
     description:
       "Variant of the Night Café — green table glowing under a single gas lamp, the room tilted with fatigue.",
-    priceUSD: 0.01,
+    priceUSD: 0.07,
     imageSeed: "vg-night-cafe",
   },
   {
@@ -224,7 +224,7 @@ export const paintings: Painting[] = [
     provenance: "Saint-Rémy",
     description:
       "Two cypresses rising like green flame, sky combed in horizontal silver strokes.",
-    priceUSD: 0.01,
+    priceUSD: 0.10,
     imageSeed: "vg-cypresses",
   },
   {
@@ -236,7 +236,7 @@ export const paintings: Painting[] = [
     provenance: "Paris period, private",
     description:
       "Yellow on yellow — quinces on a saffron cloth, a Parisian experiment in single-hue harmony.",
-    priceUSD: 0.01,
+    priceUSD: 0.03,
     imageSeed: "vg-quinces",
   },
   {
@@ -248,7 +248,7 @@ export const paintings: Painting[] = [
     provenance: "Arles, private",
     description:
       "The drawbridge at last light — washerwomen gone, the wood blackening against a peach sky.",
-    priceUSD: 0.01,
+    priceUSD: 0.05,
     imageSeed: "vg-langlois-evening",
   },
   {
@@ -260,7 +260,7 @@ export const paintings: Painting[] = [
     provenance: "After Millet, Saint-Rémy",
     description:
       "A monumental small canvas — the figure bent in arc, wheat tied like a body in repose.",
-    priceUSD: 0.01,
+    priceUSD: 0.02,
     imageSeed: "vg-peasant-binding",
   },
   {
@@ -272,7 +272,7 @@ export const paintings: Painting[] = [
     provenance: "Saint-Paul-de-Mausole",
     description:
       "The walled garden in late afternoon — pines, a stone bench, a single patient walking the path.",
-    priceUSD: 0.01,
+    priceUSD: 0.06,
     imageSeed: "vg-garden-asylum",
   },
 ];

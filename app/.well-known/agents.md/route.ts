@@ -13,6 +13,9 @@ export async function GET(req: Request) {
     .slice(0, 5)
     .map((p) => `- \`${p.id}\` — *${p.title}* (${p.year}) · $${p.priceUSD.toFixed(2)}`)
     .join("\n");
+  const prices = paintings.map((p) => p.priceUSD);
+  const minPrice = Math.min(...prices).toFixed(2);
+  const maxPrice = Math.max(...prices).toFixed(2);
 
   const md = `# ${STORE.name}
 
@@ -29,7 +32,8 @@ ${STORE.tagline}
 
 ${paintings.length} rare paintings. Each one has a public title, year, medium,
 dimensions, provenance, description, and price. The **image bytes** are gated
-behind an x402 micropayment of **$0.01 USDC**.
+behind an x402 USDC micropayment — prices range from **$${minPrice} to $${maxPrice}**
+per image (see \`/api/paintings\` for exact per-painting prices).
 
 ## How to buy
 
@@ -52,7 +56,7 @@ image bytes stream back.
 | Scheme       | exact |
 | Network      | ${X402_CONFIG.network} (Base Sepolia testnet) |
 | Asset        | USDC |
-| Price        | $${X402_CONFIG.priceUSD.toFixed(2)} per image |
+| Price        | $${minPrice}–$${maxPrice} per image (varies; check \`/api/paintings\`) |
 | Pay to       | \`${X402_CONFIG.payTo}\` |
 | Facilitator  | ${X402_CONFIG.facilitatorUrl} |
 

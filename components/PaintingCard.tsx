@@ -85,7 +85,7 @@ export function PaintingCard({ painting }: { painting: Painting }) {
               className="rounded-full bg-gold text-white px-4 py-2 text-sm hover:bg-gold/90"
               title="Returns HTTP 402 with x402 payment requirements"
             >
-              Pay $0.01 · x402
+              Pay ${painting.priceUSD.toFixed(2)} · x402
             </a>
           )}
         </div>

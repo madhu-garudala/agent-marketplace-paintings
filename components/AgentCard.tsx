@@ -25,7 +25,7 @@ export function AgentCard() {
         </div>
         <div className="grid grid-cols-3 gap-3 text-center text-sm">
           <Stat label="Works" value={paintings.length.toString()} />
-          <Stat label="Per image" value="$0.01" />
+          <Stat label="Per image" value="$0.01–0.10" />
           <Stat label="Protocol" value="x402" />
         </div>
       </div>

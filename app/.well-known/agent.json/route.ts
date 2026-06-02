@@ -2,6 +2,12 @@ import { NextResponse } from "next/server";
 import { paintings, STORE } from "@/data/paintings";
 import { X402_CONFIG } from "@/lib/x402";
 
+const prices = paintings.map((p) => p.priceUSD);
+const priceRange = {
+  min: Math.min(...prices),
+  max: Math.max(...prices),
+};
+
 // A2A-style agent card. Lets agents discover the store, its catalog endpoint,
 // and the payment protocol used to unlock images.
 
@@ -47,7 +53,8 @@ export async function GET(req: Request) {
           scheme: "exact",
           network: X402_CONFIG.network,
           payTo: X402_CONFIG.payTo,
-          priceUSD: X402_CONFIG.priceUSD,
+          priceUSDRange: { min: priceRange.min, max: priceRange.max },
+          note: "Each painting has its own price; see /api/paintings or the 402 response for the exact amount.",
           facilitator: X402_CONFIG.facilitatorUrl,
         },
       },

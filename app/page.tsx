@@ -45,9 +45,9 @@ export default function HomePage() {
           {STORE.name}
         </h1>
         <p className="mt-4 max-w-2xl text-lg text-ink/75 dark:text-canvas/75">
-          {STORE.tagline} Each image is sealed until a one-cent payment is made
-          using the <span className="font-mono">x402</span> standard — built so
-          autonomous agents can browse, pay, and collect.
+          {STORE.tagline} Every image is sealed until a small USDC payment
+          ($0.01–$0.10) is made using the <span className="font-mono">x402</span>{" "}
+          standard — built so autonomous agents can browse, pay, and collect.
         </p>
       </header>
 
@@ -65,7 +65,7 @@ export default function HomePage() {
         <div className="flex items-end justify-between mb-6">
           <h2 className="text-2xl font-semibold">The collection</h2>
           <span className="text-sm text-ink/60 dark:text-canvas/60">
-            {paintings.length} works · $0.01 each
+            {paintings.length} works · $0.01–$0.10 each
           </span>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
