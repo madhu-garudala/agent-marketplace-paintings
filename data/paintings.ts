@@ -23,32 +23,6 @@ export const STORE = {
 
 export const paintings: Painting[] = [
   {
-    id: "pell-of-redmond",
-    title: "Pell of Redmond",
-    year: 2026,
-    medium: "Oil on canvas (impasto)",
-    dimensions: "100 x 100 cm",
-    provenance: "Commissioned portrait — Microsoft, Redmond",
-    description:
-      "A starry-night portrait of Mike Pell of Microsoft — golden hair caught mid-swirl against a cobalt sky, eyes the color of a Provençal noon. Heavy impasto throughout; the canvas reads like sculpture under raking light.",
-    priceUSD: 0.05,
-    imageSeed: "vg-pell-redmond",
-    imageFile: "/paintings/mike-pell.png",
-  },
-  {
-    id: "pell-of-provence",
-    title: "Pell of Provence",
-    year: 2026,
-    medium: "Oil on canvas (impasto)",
-    dimensions: "100 x 100 cm",
-    provenance: "Commissioned portrait — Microsoft, Redmond",
-    description:
-      "A sun-warmed companion to the Redmond portrait — Mike Pell rendered against a field of burnished ochre and umber, his golden mane lit as if by a Provençal afternoon. Thick impasto catches the light across every weathered plane of the face; intent blue eyes anchor the warmth.",
-    priceUSD: 0.1,
-    imageSeed: "vg-pell-provence",
-    imageFile: "/paintings/pell-of-provence.png",
-  },
-  {
     id: "starlit-orchard",
     title: "Starlit Orchard",
     year: 1889,
